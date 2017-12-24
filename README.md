@@ -1,51 +1,49 @@
-# pyrrha-client
+## PandoraBoxChain Explorer Web Application
 
-Pandora Client App (Pyrrha Network)
+The pretty straightforward SPA with React/Redux architecture
 
-## Requirements
-
-+ NodeJS
-
-## Tech Stack
-
-* [react (v15)](https://facebook.github.io/react/) - View layer
-* [react-router (v4)](https://reacttraining.com/react-router/web/guides/quick-start) - Router
-* [redux](https://github.com/reactjs/redux) - State management
-* [redux-thunk](https://github.com/gaearon/redux-thunk) - Async actions
-* [sass](http://sass-lang.com/) - CSS preprocessor
-* [react-css-modules](https://github.com/gajus/react-css-modules) - Scoped CSS modules
-* [babel](https://babeljs.io/) - ES6/JSX compiler
-* [webpack (v2)](https://webpack.github.io/) - Module bundler
-* [jest](https://facebook.github.io/jest/) - Test suite
-
-## Setup
-
-Install dependencies:
+**NOTE: You only need to run this once!**
 
 ```sh
-$ npm install
+$ npm install # This will install the necessary packages to use the app
 ```
 
-Boot up the app:
+
+
+### To run the app in Development Mode
 
 ```sh
-$ npm start
+$ npm run dev
 ```
 
-To run the server in release mode, set the environment variable `NODE_ENV=production`
+Wait about 30 seconds for your development environment to initialize.
 
-## Test
+When it finishes, open your browser and go to `http://localhost:8080/`
 
-Run tests:
+If you see the landing page, it means you have set up everything successfully.
+
+
+### List of NPM Commands
+
 
 ```sh
-$ npm test
+$ npm run dev       # build and watch, but javascript not minified
+$ npm run build     # build a minified production version
+$ npm run lint      # linting using ESLint
+$ npm run test      # run test using Jest
+$ npm run clean     # it runs before each build, so you don't need to
+$ npm run storybook # it starts storybook server
 ```
 
-## Release
 
-Generate a release build in `dist`:
+## Suggested Workflow
 
-```sh
-$ npm run build
-```
+After you check out the repo:
+
+0. Go to your project root in your host machine  ( e.g. your Mac )
+1. Run `npm run dev` in your terminal ( wait until the dashboard show complete status )
+2. Go to your browser and go to `localhost:8080`
+3. Make code changes
+4. If there are compilation errors, you will see it in the terminal dashboard
+5. Watch your code changes reflect on browser without refreshing
+6. Repeat your development steps
